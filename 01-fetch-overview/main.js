@@ -53,10 +53,6 @@ function updateBook(bookId, book) {
 
 function deleteBook(bookId){
     const requestOptions = {
-        headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        }, 
         method: 'DELETE'
     }
 
@@ -76,8 +72,11 @@ addBook(newBook);
 
 
 // READ
-// getBooksList();
-// getBook(1);
+// get the resource list (collection)
+getBooksList();
+
+// get the resource havig the id 1
+//getBook(1);
 
 
 // UPDATE
